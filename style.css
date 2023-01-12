@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --main-bg-color:  #FFFECA;
+    --main-text-color: #0000FF;
+    --white-bg-color: #FFFFFF;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-family: inter;
+}
+
+.blue-white-text{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: inter;
+    background-color: var(--white-bg-color);
+    color: var(--main-text-color);
+    padding: 1.5em;
+    max-width: 440px;
+    margin: -5px auto;
+}
+
+header{
+    position: relative;
+    color: var(--main-text-color);
+    max-width: 440px;
+    height: 20em;
+    padding:  3em 0 0 1em;
+    border: 1px solid black;
+}
+
+h1{
+    font-weight: bold;
+    line-height: 93%;
+    font-size: 2em;
+    color: var(--main-text-color);
+    width: 10em;
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+h3{
+    font-weight: 400;
+    margin: 0 0 0.5em 0;
+    font-size: 1.5em;
+}
+
+.header-illustration{
+    width: 10em;
+    max-width: 182px;
+    position: absolute;
+    top: 10em;
+    right: 2em;
+}
+
+main{
+    max-width: 440px;
+}
+
+.intro{
+    position: relative;
+    margin: 7em auto 0;
+    width: 90%;
+    max-width: 440px;
+}   
+
+.intro-image{
+    width: 100%;
+    max-width: 440px;
+}
+
+.intro-heading{
+    color: var(--main-text-color);
+    background-color: var(--white-bg-color);
+    padding: 0.5em 0.5em 0.5em 1em;
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+}
+
+.intro-text{
+    max-width: 440px;
+    width: 90%;
+    margin: -5px auto;
+}
+
+.facts-and-numbers{
+    width: 100%;
+    max-width: 440px;
+    margin: 7em auto;
+}
+
+.facts-heading{
+    text-align: center;
+    color: var(--main-text-color);
+    width: 200px;
+    margin: 0 auto 1em auto;
+}
+
+.facts-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--main-text-color);
+    line-height: 2em;
+    padding: 0;
+}
+
+.facts-list > li{
+    background-color: #FFE400;
+    border-radius: 50px;
+    padding: 5px 12px;
+    margin-bottom: 0.5em;
+}
+
+.facts-list > li > span{
+    font-weight: 700;
+}
+
+.our-vision{
+    position: relative;
+    margin: 7em auto 0 auto;
+    width: 90%;
+}
+
+.image-our-vision{
+    width: 100%;
+}
+
+.vision-heading{
+    color: var(--main-text-color);
+    background-color: var(--white-bg-color);
+    padding: 0.5em 0.5em 0.5em 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.vision-text{
+    width: 90%;
+    max-width: 440px;
+    margin: -5px auto;
+}
