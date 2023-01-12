@@ -14,6 +14,8 @@ body{
     font-family: inter;
 }
 
+/*UTILITY*/
+
 .blue-white-text{
     font-size: 18px;
     line-height: 25px;
@@ -26,13 +28,28 @@ body{
     margin: -5px auto;
 }
 
+.time-line-spacing{
+    margin-left: 1em;
+    margin-bottom: 3em;
+}
+
+.time-line-dot{
+    position: absolute;
+    left: -11px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-text-color);
+}
+
+/*UTILITY*/
+
 header{
     position: relative;
     color: var(--main-text-color);
     max-width: 440px;
     height: 20em;
     padding:  3em 0 0 1em;
-    border: 1px solid black;
 }
 
 h1{
@@ -47,12 +64,25 @@ h2{
     font-size: 1.5em;
     font-weight: 700;
     line-height: 29px;
+    color: var(--main-text-color)
 }
 
 h3{
     font-weight: 400;
     margin: 0 0 0.5em 0;
     font-size: 1.5em;
+}
+
+h4{
+    color: var(--main-text-color);
+    font-weight: 700;
+}
+
+h5{
+    font-weight: 400;
+    line-height: 29px;
+    font-size: 1em;
+    color: var(--main-text-color)
 }
 
 .header-illustration{
@@ -80,7 +110,6 @@ main{
 }
 
 .intro-heading{
-    color: var(--main-text-color);
     background-color: var(--white-bg-color);
     padding: 0.5em 0.5em 0.5em 1em;
     position: absolute;
@@ -153,4 +182,95 @@ main{
     width: 90%;
     max-width: 440px;
     margin: -5px auto;
+}
+
+.vision-button{
+    background-color: var(--main-text-color);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.interview-jasper{
+    width: 90%;
+    margin: auto;
+    max-width: 440px;
+}
+
+.imagewrapper{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 7em auto 0 auto;
+
+}
+
+.jasper-image{
+    width: 200px;
+    height: 280px;
+}
+
+.interview-jasper-heading{
+    margin-top: 1em;
+}
+
+.interview-text{
+    line-height: 30px;
+}
+
+.interview-button{
+    background-color: var(--main-text-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding:5px 8px 5px 8px;
+    margin: 1em 0 0 0;
+}
+
+.time-line{
+    position: relative;
+    width: 90%;
+    margin: 7em auto;
+    max-width: 440px;   
+    border-width: 0;
+    border-left: 2px solid;
+    border-image: linear-gradient(var(--main-text-color), var(--main-bg-color)) 0 100%;
+    padding-bottom: 4em;
+}
+
+.time-line h2{
+    padding: 5px 0 5px 0;
+}
+
+.time-line-headings{
+    display: flex;
+    align-items: center;
+}
+
+.time-line-image{
+    width: 100%;
+    margin: 1em auto;
+}
+
+.time-travel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 440px;
+}
+
+
+.time-travel-image-wrapper{
+    width: 50%;
+    height: 283px;
+}
+
+.time-travel-image{
+    width: 100%;
+    height: 283px;
+    object-fit: cover;
 }
