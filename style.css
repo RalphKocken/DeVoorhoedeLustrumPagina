@@ -12,7 +12,7 @@
 
 body{
     background-color: var(--main-bg-color);
-    font-family: inter;
+    font-family: inter, sans-serif;
 }
 
 /*UTILITY*/
@@ -88,11 +88,50 @@ header{
 }
 
 h1{
-    font-weight: bold;
-    line-height: 93%;
+    font-weight: 700;
+    line-height: 44px;
     font-size: 2em;
     color: var(--main-text-color);
     width: 10em;
+}
+
+.line-1{
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto 0 0;
+    letter-spacing: .01em;
+    border-right: 4px solid transparent;
+    animation: 
+        typing 0.8s steps(40, end) forwards,
+        blink-caret .75s step-end forwards;
+}
+
+.line-2{
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+    margin: 0 auto 0 0;
+    padding: 0 0 6px 0;
+    letter-spacing: .01em;
+    border-right: 4px solid transparent;
+    animation: 
+        typing 1s 1s steps(40, end) forwards,
+        blink-caret .75s 0.75s step-end forwards; 
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+        50% { border-color: var(--main-text-color); 
+  }
 }
 
 h2{
@@ -290,6 +329,7 @@ main{
 .time-travel h2{
     width: 100%;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 .time-travel-image-wrapper{
@@ -382,26 +422,43 @@ main{
 } */
 
 .message-board{
-    margin: 20em auto auto 2em;
+    margin: 1em auto auto 2em;
     width: 90%;
-    max-width: 440px;
 }
 
-.message-board h2{
+.message-h2{
     text-align: center;
-    padding: 0 0 1em 0;
+    margin-top: 20em;
+    padding: 0 0 0 0;
 }
 
 .message{
-    border-left: 1px solid #888888;
-    margin: 0 0 2em 0;
-    padding: 0 0 0 1em;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.message-date{
+    display: none;
+}
+
+.message-text-box{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid gray;
 }
 
 .message-text{
+    padding: 0 0 0 20px;
     color: var(--main-text-color);
     font-size: 20px;
-    line-height: 35px;
+}
+
+.message-writer{
+    padding: 0 0 0 20px;
 }
 
 @media only screen and (min-width: 1280px){
@@ -633,5 +690,30 @@ main{
 
     .congratulations-form section:nth-last-of-type(1){
         width: 100%;
+    }
+
+    .message-h2{
+        margin: 2em 0 0 0;
+    }
+
+    .message-board{
+        width:  fit-content;
+        margin: 1em auto 5em auto;
+    }
+    
+    .message{
+        align-items: baseline;
+        margin: 0 auto 20px auto; 
+    }
+
+    .message-text{
+        font-size: 22px;
+        width: 475px;
+    }
+
+    .message-date{
+        display: block;
+        font-size: 18px;
+        width: 150px;
     }
 }
