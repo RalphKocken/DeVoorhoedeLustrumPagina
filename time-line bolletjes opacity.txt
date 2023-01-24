@@ -1,0 +1,9 @@
+time-line bolletjes opacity
+iets met afbeeldingen doen, rouleren random
+natours formulier bekijken
+semantiek checken
+waarom div en section
+geen onnodig classes gebruiken
+class voor src
+geen footer
+CSS elementen onderscheiden

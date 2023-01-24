@@ -7,96 +7,81 @@
     --main-bg-color:  #FFFECA;
     --main-text-color: #0000FF;
     --white-bg-color: #FFFFFF;
-    --input-text-color:black;
+    --secondary-text-color:#222222;
 }
 
 body{
     background-color: var(--main-bg-color);
     font-family: inter, sans-serif;
+    color: var(--main-text-color)
 }
 
-/*UTILITY*/
+.title-1{
+    font-size: 39px;
+    line-height: 44px;
+    font-weight: 700;
+}
 
-.blue-white-text{
+.title-2{
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.title-3{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.title-3-regular{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.subtitle{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.body-text{
     font-size: 18px;
     line-height: 25px;
-    font-weight: 400;
-    font-family: inter;
-    background-color: var(--white-bg-color);
-    color: var(--main-text-color);
-    padding: 1.5em;
-    max-width: 440px;
-    margin: auto;
 }
 
-.time-line-all-items{
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    position: relative;
+.body-quote{
+    font-size: 20px;
+    line-height: 35px;
 }
 
-.time-line-all-items::before{
-	content: '';
-	position: absolute;
-	width: 2px;
-	height: 100%;
-	background-color: var(--main-text-color);
-	left: 9px;
+.caption{
+    font-size: 16px;
+    line-height: 25px;
 }
 
-.time-line-item{
-    margin-bottom: 3em;
-    width: 100%;
-    position: relative;
-}
-
-.time-line-item:last-child{
-    margin-bottom: 0;
-}
-
-.time-line-item:nth-child(odd){
-    padding-right: 0;
-    text-align: left;
-}
-
-.time-line-item:nth-child(even){
-    padding-left: calc(50% + 30px);
-}
-
-.time-line-dot{
-    position: absolute;
-    left: 0;
-    top: 30px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+.button-link{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white-bg-color);
+    text-decoration: none;
     background-color: var(--main-text-color);
+    padding: 7px 7.5px;
+    border-radius: 5px;
 }
 
-/*UTILITY*/
+/*HEADER*/
 
 header{
     display: flex;
     flex-direction: column;
-    position: relative;
-    color: var(--main-text-color);
-    width: 100%;
-    max-width: 440px;
-    height: 20em;
-    padding:  3em 0 0 1em;
-}
-
-h1{
-    font-weight: 700;
-    line-height: 44px;
-    font-size: 2em;
-    color: var(--main-text-color);
-    width: 10em;
+    max-width: 30rem;
+    padding:  3rem 0 0 1rem;
+    margin: auto;
 }
 
 .line-1{
     overflow: hidden;
+    width: 0;
     white-space: nowrap;
     margin: 0 auto 0 0;
     letter-spacing: .01em;
@@ -119,93 +104,64 @@ h1{
         blink-caret .75s 0.75s step-end forwards; 
 }
 
-@keyframes typing{
-    from{
-        width: 0;
-    }
-    to{
-        width: 100%;
-    }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-        50% { border-color: var(--main-text-color); 
-  }
-}
-
-h2{
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 29px;
-    color: var(--main-text-color)
-}
-
-h3{
-    font-weight: 400;
-    margin: 0 0 0.5em 0;
-    font-size: 1.5em;
-    color: var(--main-text-color)
-}
-
-h4{
-    color: var(--main-text-color);
-    font-weight: 700;
-}
-
-h5{
-    font-weight: 400;
-    line-height: 29px;
-    font-size: 21px;
-    color: var(--main-text-color)
-}
-
 .header-illustration{
-    width: 10em;
+    width: 10rem;
     margin: 0 1em 0 0;
     align-self: flex-end;
 }
 
 main{
-    max-width: 440px;
+    max-width: 30rem;
+    margin: auto;
 }
+
+/*INTR0*/
+
 
 .intro{
-    position: relative;
     display: flex;
     flex-direction: column;
-    margin: 7em auto 0;
+    margin: 7em auto;
     width: 90%;
-    max-width: 440px;
 }   
 
-.intro-text{
-    margin-top: -3em;
-}
-
 .intro-image{
-    width: 100%;
-    max-width: 440px;
+    max-width: 30rem;
 }
 
 .intro-heading{
     background-color: var(--white-bg-color);
-    padding: 0.5em 0.5em 0.5em 1em;
-    width: 90%;
-    height: 2em;
-    margin: 0 0 0 auto;
+    width: fit-content;
+    height: 3.8rem;
+    margin: 0 -1px 0 auto;
+    padding: 15px 13px 7px 26px;
 }
 
+.intro-text{
+    margin-top: -3.75rem;
+}
+
+.blue-white-text{
+    background-color: var(--white-bg-color);
+    color: var(--main-text-color);
+    padding: 21px 13px 21px 39px;
+    margin: auto;
+}
+
+.blue-white-text a{
+    margin-top: 2rem;
+}
+
+
+/*FACTS&NUMBERS*/
+
 .facts-and-numbers{
-    width: 100%;
-    max-width: 440px;
     margin: 7em auto;
 }
 
 .facts-heading{
     text-align: center;
-    color: var(--main-text-color);
-    width: 200px;
+    width: 12.5rem;
     margin: 0 auto 1em auto;
 }
 
@@ -214,42 +170,35 @@ main{
     flex-direction: column;
     align-items: center;
     list-style-type: none;
-    font-size: 1em;
-    font-weight: 400;
-    color: var(--main-text-color);
-    line-height: 2em;
     padding: 0;
+    gap: 1rem;
 }
 
 .facts-list > li{
     background-color: #FFE400;
     border-radius: 50px;
     padding: 5px 12px;
-    margin-bottom: 0.5em;
 }
 
 .facts-list > li > span{
     font-weight: 700;
 }
 
+/*OUR VISION*/
+
 .vision{
     margin: 0 auto 0 0;
 }
 
-.vision-button{
-    background-color: var(--main-text-color);
-    color: white;
-    padding: 10px 16px;
-    border-radius: 5px;
-    border: none;
-    margin-top: 10px;
-    font-weight: 400;
+.vision-heading{
+    margin: 0;
 }
+
+/*INTERVIEW*/
 
 .interview-jasper{
     width: 90%;
     margin: auto;
-    max-width: 440px;
 }
 
 .imagewrapper{
@@ -258,7 +207,6 @@ main{
     overflow: hidden;
     border-radius: 50%;
     margin: 7em auto 0 auto;
-
 }
 
 .jasper-image{
@@ -271,33 +219,52 @@ main{
 }
 
 .interview-text{
-    line-height: 30px;
+    color: var(--secondary-text-color);
 }
 
-.interview-button{
-    background-color: var(--main-text-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding:5px 8px 5px 8px;
-    margin: 1em 0 0 0;
+.interview-text-wrapper a{
+    font-weight: 700;
+    margin-top: 1rem;
 }
+
+/*TIMELINE*/
 
 .time-line{
-    display: flex;
-    flex-direction: column;
-    position: relative;
     width: 90%;
     margin: 7em auto;
-    max-width: 440px;   
-    /* border-width: 0;
-    border: 2px solid var(--main-text-color);
-    border-image: linear-gradient(var(--main-text-color), var(--main-bg-color)) 0 100%; */
+    color: var(--secondary-text-color);  
 }
 
-.time-line-item:nth-child(odd){
-    padding-right: 0;
-	text-align: left;
+.time-line-all-items{
+    position: relative;
+}
+
+.time-line-all-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: var(--main-text-color);
+	left: 9px;
+}
+
+.time-line-item{
+    margin-bottom: 3em;
+    position: relative;
+}
+
+.time-line-item:last-child{
+    margin-bottom: 0;
+}
+
+.time-line-dot{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-text-color);
 }
 
 .time-line-item:nth-child(odd),
@@ -305,12 +272,9 @@ main{
     padding-left: 37px;
 }
 
-.time-line-dot{
-    left:0;
-}
-
 .time-line h2{
     padding: 5px 0 5px 0;
+    color: var(--main-text-color);
 }
 
 .time-line-image{
@@ -318,24 +282,23 @@ main{
     margin: 1em auto;
 }
 
+/*IMAGE-LIST*/
+
 .time-travel{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 440px;
 }
 
 .time-travel h2{
-    width: 100%;
     text-align: center;
+    width: 100%;
     margin-bottom: 1em;
 }
 
 .time-travel-image-wrapper{
     width: 50%;
     height: 283px;
-    max-width: 220px;
 }
 
 .time-travel-image{
@@ -344,11 +307,12 @@ main{
     object-fit: cover;
 }
 
+/*SEND A CONGRATULATIONS FORM */
+
 .congratulations{
     position: relative;
     margin: 3em 0 0 0;
     width: 100%;
-    max-width: 440px;
 }
 
 .congratulations-banner{
@@ -361,12 +325,11 @@ main{
 
 .congratulations-text{
     padding: 1em 0 0 0;
+    width: 90%;
 }
 
 .congratulations-form{
-    position: absolute;
-    top: 12em;
-    right: 0.5em;
+    margin: -8.5rem 0 0 auto;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -393,7 +356,6 @@ main{
     border-radius: 5px;
 }
 
-
 .congratulations-form input::placeholder, textarea::placeholder{
     color: #888888;
 }
@@ -411,38 +373,27 @@ main{
     font-weight: 400;
 }
 
-/* .congratulations-form input:last-of-type{
-    margin: 2em 0 0 0;
-    font-weight: 700;
-    width: 118px;
-    background-color: var(--main-text-color);
-    color: white;
-    padding: 10px 16px 10px 16px;
-    border-radius: 5px;
-} */
+/*MESSAGES*/
+
+footer{
+    margin-top: 7rem;
+}
 
 .message-board{
     margin: 1em auto auto 2em;
-    width: 90%;
 }
 
 .message-h2{
     text-align: center;
-    margin-top: 20em;
-    padding: 0 0 0 0;
 }
 
 .message{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
     margin: 0 0 20px 0;
 }
 
 .message-date{
     display: none;
+    color: var(--secondary-text-color);
 }
 
 .message-text-box{
@@ -452,29 +403,77 @@ main{
 }
 
 .message-text{
-    padding: 0 0 0 20px;
-    color: var(--main-text-color);
-    font-size: 20px;
+    padding: 0 1rem 0 1rem;
 }
 
 .message-writer{
     padding: 0 0 0 20px;
+    color: var(--secondary-text-color);
 }
+
+/*KEYFRAMES*/
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+        50% { border-color: var(--main-text-color); 
+  }
+}
+
+
 
 @media only screen and (min-width: 1280px){
     main{
         max-width: 1280px;
-        margin: auto;
     }
 
-    h1{
+    /*TEXT @MEDIA MAX-WIDTH 1280PX*/
+
+    .title-1{
         font-size: 50px;
+        line-height: 60px;
+        font-weight: 700;
     }
-
-    h5{
+    
+    .title-2{
+        font-size: 33px;
+        line-height: 33px;
+    }
+    
+    .title-3{
+        font-size: 23px;
+        line-height: 30px;
+    }
+    
+    .subtitle{
         font-size: 30px;
-        padding: 0 0 10px 0;
+        line-height: 36px;
     }
+    
+    .body-text{
+        font-size: 25px;
+        line-height: 37px;
+    }
+    
+    .body-quote{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    
+    .caption{
+        font-size: 18px;
+        line-height: 29px;
+    }
+    
+    /*HEADER @MEDIA MAX-WIDTH 1280PX*/
 
     header{
         flex-direction: row;
@@ -487,24 +486,46 @@ main{
         padding: 0 0 0 0;
     }
 
+    header h1{
+        display: flex;
+        flex-direction: column;
+    }
+
     .header-illustration{
         width: 284px;
     }
 
+    /*INTRO @MEDIA MAX-WIDTH 1280PX*/
+
+    
     .image-and-text{
         flex-direction: row;
     }
 
     .intro{
         position: relative;
-        display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
         align-items: center;
         width: 100%;
         max-width: 1160px;
         margin: 100px auto;
+    }
 
+    .intro-text{
+        margin: 0 0 0 auto;
+        padding: 64px 54px 51px 383px;
+        background-color: var(--white-bg-color);
+    }
+
+    .intro-heading{
+        margin: 0 0 15px 0;
+        height: auto;
+        padding: 0;
+    }
+
+    .blue-white-text{
+        width: 471px;
+        padding: 0;
     }
 
     .intro-image{
@@ -514,36 +535,10 @@ main{
         position: absolute;
     }
 
-    .blue-white-text{
-        width: 471px;
-        max-width: 55%;
-        font-size: 25px;
-        line-height: 37px;
-        margin: 0 0 0 auto;       
-        padding: 0;
-    }
-
-    .intro-text{
-        margin: 0 0 0 auto;
-        width: 908px;
-        max-width: 908px;
-        background-color: white;
-        padding: 64px 54px 64px 0;
-    }
-
-    .intro-heading{
-        margin: 0 0 0 auto;
-        max-width: 471px;
-        max-width: 471px;
-        font-size: 33px;
-        line-height: 33px;
-        padding: 0;
-    }
+    /* FACTS & NUMBERS @MEDIA MAX-WIDTH 1280PX*/
 
     .facts-and-numbers{
         width: 1085px;
-        max-width: 1085px ;
-        flex-direction: row;
     }
 
     .facts-heading{
@@ -555,39 +550,25 @@ main{
         flex-direction: row;
         justify-content: center;
         gap: 5px;
-        font-size: 23px;
         flex-wrap: wrap;
         width:  1085px;
     }
 
-    .our-vision > .intro-text{
-        margin: 0;
-    }
-
-    .our-vision > .intro-text > .intro-heading{
-        margin: 0;
-        padding: 0 0 0 78px;
-    }
-
-    .our-vision > .intro-text > .blue-white-text{
-        margin: 0;
-        padding: 0 0 0 78px;
-    }
-
-    .our-vision > img{
-        z-index: 1;
+    .vision-image{
         position: absolute;
         right: 0;
     }
 
+    .vision-intro{
+        padding: 86px 374px 99px 78px;
+        margin: 0;
+    }
+
+    /*INTERVIEW @MEDIA MAX-WIDTH 1280PX*/
+
     .interview-jasper{
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: center;
-        align-items: flex-start;
-        width: 1048px; 
-        max-width: 1048px;
     }
 
     .interview-jasper-heading{
@@ -601,13 +582,9 @@ main{
     .interview-text-wrapper{
         width: 762px;
         margin: 0 0 0 45px;
-        font-size: 22px;
-        line-height: 40px;
     }
 
-    .time-line{
-        max-width: 1360px;
-    }
+    /*@MEDIA MAX-WIDTH 1280PX*/
 
     .time-line-all-items::before{
         left: calc(50% - 1px);
@@ -625,20 +602,13 @@ main{
         left: calc(50% - 10px);
     }
 
-    .time-travel{
-        max-width: 100%;
-    }
-
     .time-travel h2{
-        font-size: 33px;
-        line-height: 33px;
         margin-bottom: 25px;
     }
 
     .time-travel-image-wrapper{
         width: 320px;
         height: 283px;
-        max-width: 320px;
     }
 
     .time-travel-image{
@@ -646,14 +616,12 @@ main{
         height: 283px;
     }
 
+    /*CONGRATULATIONS @MEDIA MAX-WIDTH 1280PX*/
+
     .congratulations{
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        margin: 3em auto 0 auto;
-        width: 1160px;
-        height: 400px;
+        margin: 100px auto 0 auto;
         max-width: 1160px;
     }
 
@@ -663,13 +631,12 @@ main{
         max-width: 1160px;
     }
 
-    .congratulations-banner h1, h5{
+    .congratulations-banner h2, h4{
         max-width:  350px;
     }
 
     .congratulations-form{
         position: absolute;
-        top: 0;
         right: 98px;
         display: flex;
         flex-direction: row;
@@ -679,6 +646,7 @@ main{
         height: 400px;
         max-width: 650px;
         align-items: center;
+        margin: 0;
     }
 
     .congratulations-form section{
@@ -692,9 +660,7 @@ main{
         width: 100%;
     }
 
-    .message-h2{
-        margin: 2em 0 0 0;
-    }
+    /*MESSAGES @MEDIA MAX-WIDTH 1280PX*/
 
     .message-board{
         width:  fit-content;
@@ -703,17 +669,15 @@ main{
     
     .message{
         align-items: baseline;
-        margin: 0 auto 20px auto; 
+        display: flex;
     }
 
     .message-text{
-        font-size: 22px;
         width: 475px;
     }
 
     .message-date{
         display: block;
-        font-size: 18px;
         width: 150px;
     }
 }
