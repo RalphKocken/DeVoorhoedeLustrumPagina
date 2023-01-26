@@ -4,7 +4,7 @@
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 De Voorhoede bestaat 10 jaar!
 
-<img src="https://user-images.githubusercontent.com/106448490/214827026-e8043bb3-cf41-475d-a326-66308d395100.png")
+<img src="https://user-images.githubusercontent.com/106448490/214827026-e8043bb3-cf41-475d-a326-66308d395100.png">
 >
 
 ## Beschrijving
