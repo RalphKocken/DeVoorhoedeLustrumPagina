@@ -11,7 +11,7 @@ De Voorhoede bestaat 10 jaar!
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
-Een one-pager om het 10 jarig bestaan van de Voorhoede de vieren. Kijk rond en kom meer te weten over het ontstaan van de Voorhoede. Hoe is de Voorhoede gestart? En waar staan ze voor? 
+Een one-pager om het 10 jarig bestaan van de Voorhoede de vieren. Kijk rond en kom meer te weten te komen over het ontstaan van de Voorhoede. Hoe is de Voorhoede gestart? En waar staan ze voor? 
 
 
 ## Kenmerken
