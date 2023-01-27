@@ -1,8 +1,6 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-De Voorhoede bestaat 10 jaar!
+# De Voorhoede bestaat 10 jaar!
 
 <img src="https://user-images.githubusercontent.com/106448490/214827026-e8043bb3-cf41-475d-a326-66308d395100.png">
 
