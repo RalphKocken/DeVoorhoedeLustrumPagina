@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+
+
 :root{
     --main-bg-color:  #FFFECA;
     --main-text-color: #0000FF;
@@ -12,6 +14,7 @@
     --typewriterCharacters: 24;
     --bg-typewriter-color: #FFFECA;
 }
+
 
 body{
     background-color: var(--main-bg-color);
@@ -528,7 +531,6 @@ footer{
         background-color: transparent;
     }
 }
- 
 
 @media only screen and (min-width: 1025px){
     main{
