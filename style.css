@@ -26,50 +26,50 @@ body{
 
 
 .title-1{
-    font-size: 39px;
+    font-size: 30px;
     line-height: 44px;
     font-weight: 700;
 }
 
 .title-2{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
 }
 
 .title-3{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
 }
 
 .title-3-regular{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
 }
 
 .subtitle{
-    font-size: 21px;
+    font-size: 18px;
     line-height: 26px;
     font-weight: 400;
 }
 
 .body-text{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
 }
 
 .body-quote{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 35px;
 }
 
 .caption{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 25px;
 }
 
 .button-link{
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     color: var(--white-bg-color);
     text-decoration: none;
@@ -530,6 +530,63 @@ footer{
     100%{
         background-color: transparent;
     }
+}
+
+@media only screen and (min-width: 480px){
+    
+.title-1{
+    font-size: 39px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+.title-2{
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.title-3{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.title-3-regular{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.subtitle{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.body-text{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.body-quote{
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.caption{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.button-link{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white-bg-color);
+    text-decoration: none;
+    background-color: var(--main-text-color);
+    padding: 7px 7.5px;
+    border-radius: 5px;
+}
+
 }
 
 @media only screen and (min-width: 1025px){
