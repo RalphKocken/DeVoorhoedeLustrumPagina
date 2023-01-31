@@ -2,7 +2,7 @@
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 # De Voorhoede bestaat 10 jaar!
 
-<video src="titlevideo.mp4">
+<video src="titlevideo.mp4" width="800" autoplay>
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
