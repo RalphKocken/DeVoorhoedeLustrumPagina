@@ -3,7 +3,7 @@
 # De Voorhoede bestaat 10 jaar!
 
 
-https://user-images.githubusercontent.com/106448490/215745952-a772f1f2-5840-4322-8042-e20517e8b7f1.mp4
+<video src="https://user-images.githubusercontent.com/106448490/215745952-a772f1f2-5840-4322-8042-e20517e8b7f1.mp4" width="800" autoplay>
 
 
 
