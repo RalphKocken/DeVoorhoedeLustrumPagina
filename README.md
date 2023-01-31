@@ -2,8 +2,7 @@
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 # De Voorhoede bestaat 10 jaar!
 
-
-https://user-images.githubusercontent.com/106448490/215745952-a772f1f2-5840-4322-8042-e20517e8b7f1.mp4
+![Untitled video - Made with Clipchamp](https://user-images.githubusercontent.com/106448490/215746403-7c425aaa-5d2c-43fb-84fe-50cb30e8af1b.gif)
 
 
 ## Beschrijving
